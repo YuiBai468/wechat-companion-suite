@@ -4,6 +4,8 @@
 
 使用自己的微信账号、模型服务和设备配对。公开版提供通用示例人格与配置，运行数据保存在本地。
 
+**自有内容采用非商业许可：允许非商业 AI 训练、微调和评测，禁止商业盈利用途。** 适用范围、上游许可与历史授权见 [许可说明](docs/LICENSING.md)。这是附有用途限制的公开源码项目。
+
 ![使用合成数据的看板演示](docs/images/dashboard-demo.png)
 
 图中聊天、状态与指标均为合成演示数据。
@@ -111,6 +113,8 @@ python tools/privacy_check.py
 
 ## 许可证
 
-电脑端自有代码与本文档采用 [MIT](LICENSE)。`mobile/gadgetbridge/` 遵循其自带的 **GNU AGPL-3.0-or-later** 和各文件版权声明；其中的美术资源另见 `LICENSE.artwork`。
+项目自有代码、文档与示例提示词采用 [WeChat Companion Noncommercial AI License 1.0](LICENSE)：允许学习、修改、非商业分发，以及非商业 AI 训练、微调、蒸馏和评测；商业收费、倒卖、广告变现和面向商业产品的模型训练不在授权范围内。
+
+`mobile/gadgetbridge/` 继续遵循其自带的 **GNU AGPL-3.0-or-later** 和各文件版权声明；其中的美术资源另见 `LICENSE.artwork`。根目录非商业条款不限制该目录在原许可下的权利。此前合法获得的 MIT 授权继续有效，本次变更不追溯撤销；详见 [许可说明](docs/LICENSING.md)。
 
 第三方组件按各自许可证分发，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。角色参考图由使用者自行提供有权使用的素材。

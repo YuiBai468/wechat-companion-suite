@@ -1,21 +1,72 @@
-MIT License
+WeChat Companion Noncommercial AI License 1.0
+License identifier: LicenseRef-WCS-NC-AI-1.0
 
 Copyright (c) 2026 YuiBai468
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Scope
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This license applies only to original code, documentation, prompts, and other
+material that the copyright holder offers under this license (the Material).
+It does not replace third-party licenses or the licenses of material in
+mobile/gadgetbridge/. Existing copyright and license notices must be retained.
+See THIRD_PARTY_NOTICES.md and docs/LICENSING.md for the applicable boundaries.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. Noncommercial permission, including AI training
+
+Subject to these terms, you are granted a worldwide, royalty-free,
+non-exclusive license to use, study, copy, modify, and redistribute the
+Material for noncommercial purposes. This expressly includes noncommercial
+AI and machine-learning training, fine-tuning, distillation, evaluation,
+and preparation of training datasets using the Material.
+
+Noncommercial means a use that is not primarily intended for or directed
+toward commercial advantage or monetary compensation, whether direct or
+indirect. The purpose and activity determine this condition, not merely the
+user's status as an individual, company, charity, or research institution.
+
+3. Commercial activities are not licensed
+
+Without separate written permission from the copyright holder, this license
+does not authorize using the Material for commercial or profit-making
+activities. Examples include selling or licensing the Material or modified
+copies for revenue; paid bot, hosted, API, SaaS, deployment, or support
+services based on the Material; advertising or paywall monetization; and
+using the Material to train, fine-tune, distill, or evaluate models intended
+for commercial products or services, including monetized models, weights,
+and datasets. A free initial offering does not make an intended commercial
+application noncommercial.
+
+Permission for AI training in section 2 is not an exception to this
+noncommercial condition. A later commercial use requiring rights in the
+Material requires separate written permission before that use begins.
+
+4. Redistribution and notices
+
+When redistributing the Material or modifications, preserve this license,
+copyright notices, and applicable third-party notices; identify material
+changes; and do not represent that you can grant commercial rights in the
+Material under this license. The noncommercial condition must accompany
+redistributed copies and modifications of the Material.
+
+5. Prior grants and other rights
+
+This license does not withdraw or restrict rights already lawfully granted
+under earlier licenses, including previously published MIT-licensed versions.
+It does not restrict third-party software under its own license, fair use,
+other applicable statutory exceptions, or material in the public domain.
+It does not claim rights over independently created outputs, unrelated
+model components, or other content in which the copyright holder has no
+applicable rights. No trademark rights or endorsement are granted.
+
+6. Termination and disclaimer
+
+Rights granted by this license terminate upon a material violation of these
+terms. Termination does not affect rights independently obtained under a
+different valid license. Rights may be restored by written permission from
+the copyright holder.
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE MATERIAL IS PROVIDED "AS IS",
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+THE COPYRIGHT HOLDER IS NOT LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY
+ARISING FROM THE MATERIAL OR ITS USE.

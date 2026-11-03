@@ -7,3 +7,5 @@
 前端源码在 `desktop/dashboard-src/`，通过 `tools/build-dashboard.py` 生成 `desktop/console.html`。提交前同时更新两者。
 
 修改手机部分时保留 Gadgetbridge 的许可证和版权声明。不要提交构建出的 APK、签名材料、`local.properties` 或设备导出。
+
+自有内容的新贡献按根目录的非商业 AI 许可提交，请确认你有权提供该授权。手机端和第三方文件继续使用其各自原许可。具体范围见 [许可说明](docs/LICENSING.md)。
