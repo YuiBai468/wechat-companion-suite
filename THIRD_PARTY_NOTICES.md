@@ -11,6 +11,6 @@
 
 Windows 系统库、微信客户端、模型服务与角色素材由使用者自行准备。仓库中保留 Gadgetbridge 的完整应用源码，不包含运行者的签名密钥或已安装应用数据。
 
-根目录的 WeChat Companion Noncommercial AI License 1.0 仅适用于权利人有权按该许可提供的自有内容，不替换 Gadgetbridge 目录的 AGPL 或其他第三方许可，也不对它们附加非商业限制。修改并分发手机应用时，应遵循其源码及资源的原许可要求。
+根目录的 WeChat Companion Project Non-Resale and AI Training License 1.1 仅适用于权利人有权按该许可提供的自有内容，不替换 Gadgetbridge 目录的 AGPL 或其他第三方许可，也不对它们附加禁止转售等限制。修改并分发手机应用时，应遵循其源码及资源的原许可要求。
 
 此前合法授出的 MIT 权利仍有效，历史许可和范围见 [许可说明](docs/LICENSING.md)。

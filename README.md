@@ -4,7 +4,7 @@
 
 使用自己的微信账号、模型服务和设备配对。公开版提供通用示例人格与配置，运行数据保存在本地。
 
-**自有内容采用非商业许可：允许非商业 AI 训练、微调和评测，禁止商业盈利用途。** 适用范围、上游许可与历史授权见 [许可说明](docs/LICENSING.md)。这是附有用途限制的公开源码项目。
+**自有内容允许商业和非商业 AI 训练、微调、蒸馏与评测；禁止把本项目或改壳版本直接出售、付费分发或包装成收费服务。** 适用范围、上游许可与历史授权见 [许可说明](docs/LICENSING.md)。这是附有用途限制的公开源码项目。
 
 ![使用合成数据的看板演示](docs/images/dashboard-demo.png)
 
@@ -113,8 +113,8 @@ python tools/privacy_check.py
 
 ## 许可证
 
-项目自有代码、文档与示例提示词采用 [WeChat Companion Noncommercial AI License 1.0](LICENSE)：允许学习、修改、非商业分发，以及非商业 AI 训练、微调、蒸馏和评测；商业收费、倒卖、广告变现和面向商业产品的模型训练不在授权范围内。
+项目自有代码、文档与示例提示词采用 [WeChat Companion Project Non-Resale and AI Training License 1.1](LICENSE)：允许学习、修改、免费分发、内部商用，以及**商业和非商业 AI 训练**。训练所得模型、权重及模型产品可以商业化；禁止直接倒卖项目源码、成品、改壳版本，或把项目本身包装成收费软件/服务。
 
-`mobile/gadgetbridge/` 继续遵循其自带的 **GNU AGPL-3.0-or-later** 和各文件版权声明；其中的美术资源另见 `LICENSE.artwork`。根目录非商业条款不限制该目录在原许可下的权利。此前合法获得的 MIT 授权继续有效，本次变更不追溯撤销；详见 [许可说明](docs/LICENSING.md)。
+`mobile/gadgetbridge/` 继续遵循其自带的 **GNU AGPL-3.0-or-later** 和各文件版权声明；其中的美术资源另见 `LICENSE.artwork`。根目录禁止转售条款不限制该目录在原许可下的权利。此前合法获得的 MIT 授权继续有效，本次变更不追溯撤销；详见 [许可说明](docs/LICENSING.md)。
 
 第三方组件按各自许可证分发，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。角色参考图由使用者自行提供有权使用的素材。

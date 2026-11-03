@@ -1,69 +1,79 @@
-WeChat Companion Noncommercial AI License 1.0
-License identifier: LicenseRef-WCS-NC-AI-1.0
+WeChat Companion Project Non-Resale and AI Training License 1.1
+License identifier: LicenseRef-WCS-NonResale-AI-1.1
 
 Copyright (c) 2026 YuiBai468
 
 1. Scope
 
-This license applies only to original code, documentation, prompts, and other
-material that the copyright holder offers under this license (the Material).
-It does not replace third-party licenses or the licenses of material in
-mobile/gadgetbridge/. Existing copyright and license notices must be retained.
-See THIRD_PARTY_NOTICES.md and docs/LICENSING.md for the applicable boundaries.
+These terms apply only to original code, documentation, prompts, and other
+material the copyright holder offers under this license (the Material),
+to the extent the holder has the applicable rights. They do not replace
+third-party licenses or any license within mobile/gadgetbridge/.
+See THIRD_PARTY_NOTICES.md and docs/LICENSING.md for the boundaries.
 
-2. Noncommercial permission, including AI training
+2. General permission
 
 Subject to these terms, you are granted a worldwide, royalty-free,
-non-exclusive license to use, study, copy, modify, and redistribute the
-Material for noncommercial purposes. This expressly includes noncommercial
-AI and machine-learning training, fine-tuning, distillation, evaluation,
-and preparation of training datasets using the Material.
+non-exclusive license to use, study, copy, modify, deploy, and redistribute
+the Material. Personal use, research, noncommercial use, and internal use
+by a commercial organization are permitted. Redistribution of the Material
+and modifications must comply with sections 4 and 5.
 
-Noncommercial means a use that is not primarily intended for or directed
-toward commercial advantage or monetary compensation, whether direct or
-indirect. The purpose and activity determine this condition, not merely the
-user's status as an individual, company, charity, or research institution.
+3. Commercial and noncommercial AI training are permitted
 
-3. Commercial activities are not licensed
+You may use the Material for AI and machine-learning training, fine-tuning,
+distillation, evaluation, and preparation of training datasets, whether the
+purpose is commercial or noncommercial. You may sell, license, host, or
+otherwise commercially exploit the resulting models, model weights,
+inference outputs, and model-based products and services.
 
-Without separate written permission from the copyright holder, this license
-does not authorize using the Material for commercial or profit-making
-activities. Examples include selling or licensing the Material or modified
-copies for revenue; paid bot, hosted, API, SaaS, deployment, or support
-services based on the Material; advertising or paywall monetization; and
-using the Material to train, fine-tune, distill, or evaluate models intended
-for commercial products or services, including monetized models, weights,
-and datasets. A free initial offering does not make an intended commercial
-application noncommercial.
+Those activities are not prohibited project monetization merely because
+the Material was used in training. These terms do not automatically impose
+this license on a trained model, independently created output, or unrelated
+model component. This permission does not authorize reselling copies of the
+Material itself, including paid source-code datasets containing those copies,
+or packaging the project software as a paid product or service under section 4.
 
-Permission for AI training in section 2 is not an exception to this
-noncommercial condition. A later commercial use requiring rights in the
-Material requires separate written permission before that use begins.
+4. Direct monetization of the project is not licensed
 
-4. Redistribution and notices
+Without separate written permission from the copyright holder, you may not
+sell, rent, or provide paid access to the Material, modified copies, compiled
+copies, repackaged versions, or project-based software distributions. You may
+not make access to the project's functionality a paid product or service,
+such as a paid deployment of the project's bot or dashboard, hosted bot
+subscriptions, or a rebranded paid edition. Changing names, appearance, or
+packaging does not remove this restriction. Advertising, subscriptions, or
+mandatory payments tied to access to such project offerings count as direct
+monetization even if a copy is described as free.
+
+This restriction concerns monetizing the project or its derivatives. It does
+not prohibit internal business use, the AI activities and resulting model
+products permitted in section 3, or independent outputs merely because
+they were produced with the software. Other applicable rights must still
+be respected. Voluntary donations that are not a condition of access and
+provide no paid project features are not a sale or paid-access offering.
+
+5. Redistribution and notices
 
 When redistributing the Material or modifications, preserve this license,
-copyright notices, and applicable third-party notices; identify material
-changes; and do not represent that you can grant commercial rights in the
-Material under this license. The noncommercial condition must accompany
-redistributed copies and modifications of the Material.
+copyright notices, and third-party notices, and identify material changes.
+The project non-resale conditions must accompany redistributed copies and
+modifications. You may not represent that these terms grant unrestricted
+resale rights in the Material. Third-party material keeps its own license.
 
-5. Prior grants and other rights
+6. Prior grants and other rights
 
-This license does not withdraw or restrict rights already lawfully granted
+These terms do not withdraw or restrict rights already lawfully granted
 under earlier licenses, including previously published MIT-licensed versions.
-It does not restrict third-party software under its own license, fair use,
-other applicable statutory exceptions, or material in the public domain.
-It does not claim rights over independently created outputs, unrelated
-model components, or other content in which the copyright holder has no
-applicable rights. No trademark rights or endorsement are granted.
+They do not limit third-party licenses, fair use, other statutory exceptions,
+public-domain material, or content in which the holder has no applicable
+rights. No trademark rights or endorsement are granted.
 
-6. Termination and disclaimer
+7. Termination and disclaimer
 
-Rights granted by this license terminate upon a material violation of these
-terms. Termination does not affect rights independently obtained under a
-different valid license. Rights may be restored by written permission from
-the copyright holder.
+Rights granted by these terms terminate upon a material violation.
+Termination does not affect rights independently obtained under a different
+valid license. Rights may be restored by the holder's written permission.
 
 TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE MATERIAL IS PROVIDED "AS IS",
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
