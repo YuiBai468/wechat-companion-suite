@@ -1,0 +1,217 @@
+{
+  "baseUrl": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "thinking": "high",
+  "temperature": 1.15,
+  "maxTokens": 900,
+  "credentialsFile": "",
+  "credentialsRef": "DEEPSEEK_API_KEY",
+  "apiKey": "${DEEPSEEK_API_KEY}",
+  "personaFile": "personas/group-friend.md",
+  "runtimeNote": "你是一个由用户配置的微信聊天角色。直接输出可以发送的聊天内容；不要输出动作旁白、系统标签或分析过程。",
+  "chats": [],
+  "nicknames": [],
+  "wakeProbability": 0.05,
+  "followupSeconds": 0,
+  "historyLimit": 12,
+  "contextFile": "data/contexts.json",
+  "silkDecoder": "bin/silk_v3_decoder.exe",
+  "asr": {
+    "enabled": false,
+    "provider": "qwen",
+    "model": "qwen3-asr-flash",
+    "ref": "DASHSCOPE_API_KEY",
+    "language": "zh",
+    "maxSeconds": 180
+  },
+  "vision": {
+    "provider": "qwen",
+    "model": "qwen3-vl-plus",
+    "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "ref": "DASHSCOPE_API_KEY",
+    "maxTokens": 1000,
+    "timeoutSeconds": 180,
+    "enableThinking": false,
+    "enabled": false
+  },
+  "auxiliary": {
+    "provider": "mimo",
+    "baseUrl": "https://api.xiaomimimo.com/v1",
+    "model": "mimo-v2.6-flash",
+    "credentialsFile": "",
+    "credentialFormat": "env",
+    "thinking": "low",
+    "maxTokens": 4096,
+    "timeoutSeconds": 60,
+    "enabled": true
+  },
+  "stripEmojiInPrivate": true,
+  "image": {
+    "enabled": false,
+    "model": "qwen-image-3.0-pro",
+    "size": "1152*1536",
+    "promptExtend": false,
+    "ref": "DASHSCOPE_API_KEY",
+    "refs": [],
+    "saveDir": "data/images",
+    "maxPerDay": 4,
+    "requireAsk": true,
+    "writerModel": "mimo-v2.6-flash",
+    "character": "用户配置的角色身份；保持中性，不指向任何真实人物。",
+    "referenceMode": "identity-first"
+  },
+  "sendDelayMin": 1.5,
+  "sendDelayMax": 8.0,
+  "dailySendLimit": 600,
+  "quietHours": [
+    2,
+    7
+  ],
+  "readDelay": 0.6,
+  "selfSenderId": 2,
+  "debounceSeconds": 3.0,
+  "debounceMaxSeconds": 9.0,
+  "rhythmProfile": "natural",
+  "rhythmBurst": 0,
+  "rhythmWindow": 0,
+  "proactive": {
+    "enabled": false,
+    "checkSeconds": 30,
+    "silenceMin": [
+      50,
+      160
+    ],
+    "nudgeMin": [
+      6,
+      20
+    ],
+    "angryMin": [
+      45,
+      110
+    ],
+    "lastMin": [
+      200,
+      400
+    ],
+    "dailyLimit": 5,
+    "minGapMin": 40,
+    "chance": 0.65,
+    "quietHours": [
+      1,
+      8
+    ]
+  },
+  "humanize": {
+    "enabled": true,
+    "sleepHours": [
+      2,
+      8
+    ],
+    "sleepDelayMin": 40,
+    "sleepDelayMax": 150,
+    "sleepSilentChance": 0.25,
+    "sleepEscalateFactor": 0.55,
+    "sleepEscalateWindowMin": 12,
+    "sleepWakeWords": [
+      "睡不着",
+      "失眠",
+      "睡不着觉",
+      "难受",
+      "好难受",
+      "想你了",
+      "好想你",
+      "出事了",
+      "怎么办",
+      "哭了",
+      "救",
+      "急",
+      "怕"
+    ],
+    "sleepWakeDelayMin": 6,
+    "sleepWakeDelayMax": 25,
+    "slowReplyChance": 0.1,
+    "slowReplyMin": 3,
+    "slowReplyMax": 10
+  },
+  "schedule": {
+    "enabled": false,
+    "wake": {
+      "enabled": true,
+      "at": "07:00",
+      "jitterMin": 40
+    },
+    "meals": [
+      {
+        "enabled": true,
+        "name": "早饭",
+        "at": "09:00",
+        "jitterMin": 50
+      },
+      {
+        "enabled": true,
+        "name": "午饭",
+        "at": "12:40",
+        "jitterMin": 60
+      },
+      {
+        "enabled": true,
+        "name": "晚饭",
+        "at": "18:40",
+        "jitterMin": 60
+      }
+    ],
+    "sleep": {
+      "enabled": true,
+      "at": "01:00",
+      "jitterMin": 45
+    },
+    "catchUpMinutes": 60,
+    "insomnia": {
+      "enabled": true,
+      "from": "23:30",
+      "to": "00:45",
+      "minDays": 1,
+      "maxDays": 2,
+      "aheadMin": 2,
+      "aheadMax": 6
+    },
+    "randomChats": {
+      "enabled": true,
+      "from": "09:30",
+      "to": "23:30",
+      "minPerDay": 1,
+      "maxPerDay": 3,
+      "avoidMinutes": 45
+    }
+  },
+  "health": {
+    "enabled": false,
+    "port": 8765,
+    "token": "${HEALTH_PUSH_TOKEN}",
+    "hrHigh": 150,
+    "hrHard": 170,
+    "hrExtreme": 190,
+    "hrSustainSeconds": 60,
+    "spo2Low": 90,
+    "stressLow": 20,
+    "stressHigh": 40,
+    "sleepShortH": 5,
+    "sleepLongH": 10,
+    "wakeLateHour": 12,
+    "nightStartH": 1,
+    "nightEndH": 5,
+    "sleepFreshMin": 120,
+    "workoutGraceMin": 10,
+    "workoutStaleHours": 3,
+    "hrExtremeInWorkout": 190,
+    "cooldownMin": 25,
+    "dailyLimit": 10,
+    "quietHours": []
+  },
+  "logFile": "data/logs/wechat-bot.log",
+  "memoryFile": "data/memory.json",
+  "lifeplan": {
+    "enabled": false,
+    "chat": "${WECHAT_PRIVATE_CHAT}"
+  }
+}

@@ -1,0 +1,80 @@
+<section class="view" id="view-furina">
+
+  <div id="furinaError" class="cu-notice" role="status" hidden></div>
+
+  <div class="fu-hero card">
+
+    <div class="fu-watermark" aria-hidden="true"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="82"/><circle cx="100" cy="100" r="64"/><path d="M100 45c-12 25-35 46-35 70a35 35 0 0 0 70 0c0-24-23-45-35-70ZM34 140q33-17 66 0t66 0M25 154q38-17 75 0t75 0"/></svg></div>
+
+    <div class="cu-eyebrow">FURINA · PERSONAL JOURNAL</div>
+
+    <div class="fu-hero-top"><div><h2>芙宁娜的此刻</h2><p id="fuDate">正在读取生活状态…</p></div><span class="cu-tag" id="fuPhase">角色生活状态</span></div>
+
+    <div id="fuCurrent" class="fu-current">还没有可读取的安排</div>
+
+    <div id="fuCurrentMeta" class="cu-muted">根据现有日程与状态展示</div>
+
+    <div class="fu-hero-footer"><span id="fuNext">下一段 · 等待数据</span><button class="cu-link" data-cu="goto" data-view="life">查看与调整日程 ↗</button></div>
+
+  </div>
+
+  <div class="fu-status-grid" id="fuStatusCards"></div>
+
+  <div class="cu-two-col">
+
+    <div class="card"><div class="cu-head"><div><div class="cu-eyebrow">LITTLE THINGS</div><h2>记在心里的事</h2></div><button class="cu-link" data-cu="fu-organizer">管理记忆与承诺 ↗</button></div><div id="fuPromises" class="cu-records"><div class="cu-empty">正在读取承诺…</div></div><p class="cu-footnote">这里只显示芙宁娜所在会话的承诺；历史未归属记录在记忆页单独整理。</p></div>
+
+    <div class="card"><div class="cu-head"><div><div class="cu-eyebrow">PRIMARY MODEL</div><h2>她的主模型</h2></div><span class="cu-tag" id="fuModelEffort">—</span></div><div id="fuModelName" class="fu-model-name">正在读取…</div><div id="fuModelStats" class="cu-mini-grid"></div><p class="cu-footnote">主聊天与后台任务分别统计。下面只读取能够确认属于此会话的调用。</p><button class="cu-link" data-cu="goto" data-view="model">全部模型与统计 ↗</button></div>
+
+  </div>
+
+  <div class="card fu-trace-card"><div class="cu-head"><div><div class="cu-eyebrow">WORDS BEHIND THE CONVERSATION</div><h2>主模型的原始记录</h2><p>原始输入、接口返回的思考、原始输出。</p></div><button class="cu-button" data-cu="furina-refresh">刷新</button></div>
+
+    <label class="cu-field">选择这次调用<select id="fuCallSelect"><option value="">尚无可关联的调用</option></select></label>
+
+    <div id="fuTraceMeta" class="cu-footnote">新的调用会自动出现；不会推测旧记录属于哪个会话。</div>
+
+    <div class="cu-tabs" role="tablist" aria-label="芙宁娜主模型原文"><button role="tab" aria-selected="true" class="selected" data-cu="fu-tab" data-tab="input">原始输入</button><button role="tab" aria-selected="false" data-cu="fu-tab" data-tab="reasoning">思考过程</button><button role="tab" aria-selected="false" data-cu="fu-tab" data-tab="output">原始输出</button><span class="grow"></span><button class="cu-link" data-cu="fu-copy" disabled>复制原文</button></div>
+
+    <pre id="fuTraceText" class="cu-raw" tabindex="0">等待可关联的调用记录。</pre>
+
+    <details class="cu-details"><summary>请求与响应 JSON</summary><div class="cu-two-col"><div><h3>请求</h3><pre id="fuTraceRequest" class="cu-raw">—</pre></div><div><h3>响应</h3><pre id="fuTraceResponse" class="cu-raw">—</pre></div></div></details>
+
+  </div>
+
+</section>
+
+<section class="view" id="view-diagnostics">
+
+  <div class="cu-intro"><div><div class="cu-eyebrow">FROM INBOX TO REPLY</div><h2>每条消息，走到了哪一步</h2><p>区分正常没有触发、正在处理与真正失败。</p></div><button class="cu-button" data-cu="diagnostics-refresh">刷新记录</button></div>
+
+  <div id="diagnosticsError" class="cu-notice" role="status" hidden></div>
+
+  <div id="diagnosticsCounts" class="cu-stat-grid"></div>
+
+  <div class="card"><div class="cu-toolbar"><label class="cu-field">会话<select id="diagnosticsChat"><option value="">全部会话</option></select></label><label class="cu-field">结果<select id="diagnosticsStatus"><option value="">全部结果</option><option value="sent">已发送</option><option value="skipped">未触发</option><option value="active">处理中</option><option value="failed">失败</option></select></label><span id="diagnosticsUpdated" class="cu-footnote"></span></div><div id="diagnosticsList" class="cu-records"><div class="cu-empty">还没有消息诊断记录</div></div></div>
+
+  <div class="cu-note"><span class="cu-dot"></span><span>群聊被明确 @ 时仍按原规则响应。无人接话时收住，认真提问时正常回答，互损时再接梗。</span></div>
+
+</section>
+
+<section class="view" id="view-memory">
+
+  <div class="cu-toolbar cu-memory-toolbar"><label class="cu-field">正在整理的会话<select id="organizerChat"><option value="">历史未归属</option></select></label><button class="cu-button" data-cu="organizer-refresh">重新读取</button><button class="cu-button" data-cu="organizer-tidy">整理重复与到期记录</button></div>
+
+  <div id="organizerMessage" class="cu-notice" role="status" hidden></div>
+
+  <div id="organizerCounts" class="cu-stat-grid"></div>
+
+  <div class="cu-two-col cu-memory-grid">
+
+    <div class="card"><div class="cu-head"><div><div class="cu-eyebrow">LONG TERM MEMORY</div><h2>会话长期记忆</h2><p>只作用于当前会话。</p></div><span id="memoryDirty" class="cu-tag" hidden>有未保存修改</span></div><label class="cu-field" for="memoryEditor">记忆内容</label><textarea id="memoryEditor" class="cu-textarea" rows="10" maxlength="20000" placeholder="此会话还没有长期记忆"></textarea><div class="cu-actions"><button class="cu-button primary" data-cu="memory-save">保存记忆</button><button class="cu-button" data-cu="memory-discard">撤销未保存修改</button></div><p class="cu-footnote">保存前保留备份；后台也有更新时会提示冲突，草稿会留在这里。</p></div>
+
+    <div class="card"><div class="cu-head"><div><div class="cu-eyebrow">PEOPLE & FACTS</div><h2>关于某个人</h2><p>同名群友通过会话和成员标识区分。</p></div></div><form id="factForm"><input type="hidden" id="factId"><div class="cu-form-grid"><label class="cu-field">成员标识<input id="factPersonId" maxlength="120" placeholder="稳定的成员 ID；留空表示整个会话"></label><label class="cu-field">显示称呼<input id="factPersonName" maxlength="80" placeholder="例如：小李"></label></div><label class="cu-field">要记住的事实<textarea id="factText" class="cu-textarea" rows="3" maxlength="2000" required placeholder="只写确实知道的事"></textarea></label><label class="cu-field">到期日期（可选）<input id="factExpiry" type="date"></label><div class="cu-actions"><button class="cu-button primary" type="submit">保存这条事实</button><button class="cu-button" type="button" data-cu="fact-reset">清空表单</button></div></form><div id="factList" class="cu-records cu-facts"><div class="cu-empty">还没有单独记录的事实</div></div></div>
+
+  </div>
+
+  <div class="card"><div class="cu-head"><div><div class="cu-eyebrow">PROMISES, WITH A DATE</div><h2>承诺与兑现</h2><p>过期保留记录，完成后停止对应待提醒。</p></div><label class="cu-field cu-inline">显示<select id="promiseFilter"><option value="active">待完成与过期</option><option value="all">全部记录</option><option value="completed">已完成</option><option value="archived">已归档</option></select></label></div><div id="organizerPromises" class="cu-records"><div class="cu-empty">还没有承诺记录</div></div></div>
+
+</section>
+

@@ -1,0 +1,6 @@
+<div class="card cu-planner" id="plannerEditor">
+  <div class="cu-head"><div><div class="cu-eyebrow">KEEP WHAT MATTERS</div><h2>只改接下来的安排</h2><p>已经开始的安排自动保留；重要的未来安排可以锁定。</p></div><button class="cu-button primary" id="replanRemainingButton" data-cu="planner-replan" disabled>只重排剩余时间</button></div>
+  <div id="plannerMessage" class="cu-notice" role="status" hidden></div>
+  <div class="cu-toolbar"><label class="cu-field cu-version-field">历史版本<select id="plannerVersion"><option value="">还没有可恢复的版本</option></select></label><button class="cu-button" id="plannerRestoreButton" data-cu="planner-restore" disabled>恢复所选版本</button><span class="cu-footnote">恢复前也会保存当前版本，可以再次恢复。</span></div>
+  <details class="cu-details"><summary>锁定安排 <span id="plannerLockCount" class="cu-muted">0 段</span></summary><div class="cu-toolbar"><label class="cu-check"><input id="plannerShowPast" type="checkbox">显示已经开始的安排</label><button class="cu-link" data-cu="planner-refresh">刷新安排</button><button class="cu-link" id="plannerUnlockAll" data-cu="planner-unlock-all" disabled>解除手动锁定</button></div><div id="plannerSegments" class="cu-records"><div class="cu-empty">正在读取日程…</div></div></details>
+</div>

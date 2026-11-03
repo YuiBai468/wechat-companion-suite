@@ -1,0 +1,17 @@
+.life-retry-panel{padding:22px;margin-bottom:20px;background:linear-gradient(120deg,rgba(57,88,137,.19),transparent 66%),var(--card-bg,#141e2d)}
+.life-retry-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.life-retry-copy{flex:1;min-width:180px}.life-retry-eyebrow{font-size:9px;letter-spacing:2px;color:#83a9df;margin-bottom:8px;font-weight:700}
+.life-retry-copy h2{font-size:18px;margin:0 0 7px;letter-spacing:.3px}.life-retry-copy p{color:var(--muted,#8d9ab0);font-size:12px;line-height:1.65;margin:0}
+.life-retry-button{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:12px 17px;border-radius:10px;border:1px solid #6689bf;background:#305383;color:#f0f6ff;font-family:inherit;font-weight:600;font-size:12px;line-height:1.4;min-height:43px;cursor:pointer;transition:background .15s,border-color .15s}
+.life-retry-button:hover:enabled{background:#3b6399;border-color:#8cb5ed}.life-retry-button:focus-visible{outline:2px solid #94beff;outline-offset:3px}
+.life-retry-button:disabled{background:#1c2b40;border-color:#35445b;color:#9eb0cb;cursor:default}.life-retry-icon{font-size:20px;font-weight:400;line-height:1}
+.life-generation-status{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:20px;color:#95a5bc;font-size:11px;line-height:1.7}
+.life-generation-status strong{font-weight:600;color:inherit}.life-generation-dot{width:6px;height:6px;flex:0 0 6px;border-radius:50%;background:currentColor}
+.life-generation-status[data-state=running]{color:#a3c9ff}.life-generation-status[data-state=succeeded]{color:#8cd9b1}.life-generation-status[data-state=failed]{color:#eea3a3}.life-generation-status[data-state=cooldown]{color:#e9c487}
+.life-generation-status #lifeGenerationTime{color:var(--muted,#8d9ab0);margin-left:auto;font-family:var(--mono,Consolas,monospace);font-size:10px}
+.life-generation-message{font-size:12px;line-height:1.8;color:#c0cada;margin:7px 0 0;overflow-wrap:anywhere}.life-generation-error{font-size:11px;color:#f0ba9e;margin:10px 0 0;line-height:1.7;overflow-wrap:anywhere}
+.life-generation-footnote{font-size:10px;color:var(--muted,#8d9ab0);line-height:1.7;margin-top:15px;padding-top:12px;border-top:1px solid rgba(128,157,200,.13)}
+.life-retry-panel[aria-busy=true] .life-retry-icon{animation:life-retry-spin 1.7s linear infinite}.life-retry-panel[aria-busy=true] .life-generation-dot{animation:life-retry-pulse 1.8s ease-in-out infinite}
+@keyframes life-retry-spin{to{transform:rotate(360deg)}}@keyframes life-retry-pulse{50%{opacity:.35}}
+@media(max-width:640px){.life-retry-panel{padding:18px}.life-retry-heading{gap:15px}.life-retry-button{width:100%;font-size:12px}.life-retry-copy{min-width:0;flex-basis:100%}.life-generation-status{margin-top:17px}.life-generation-status #lifeGenerationTime{margin-left:0;flex-basis:100%;padding-left:14px}}
+@media(prefers-reduced-motion:reduce){.life-retry-panel .life-retry-icon,.life-retry-panel .life-generation-dot{animation:none!important}}

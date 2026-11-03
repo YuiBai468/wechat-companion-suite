@@ -1,0 +1,24 @@
+<div class="wellness" id="wellnessRoot">
+
+  <div class="well-toolbar"><div><h2>健康概览</h2><p>查看当天指标，切换近期趋势。</p></div><div class="well-date-controls"><button class="well-icon" data-v2="date-prev" aria-label="前一天">‹</button><input type="date" id="wellDate" aria-label="健康数据日期"><button class="well-icon" data-v2="date-next" aria-label="后一天">›</button><button class="well-icon" data-v2="health-refresh" aria-label="刷新健康数据">↻</button></div></div>
+
+  <div class="well-status-line"><div class="segmented" id="wellRange" aria-label="统计范围"><button class="selected" data-v2="range" data-value="day" aria-pressed="true">日</button><button data-v2="range" data-value="week" aria-pressed="false">周</button><button data-v2="range" data-value="month" aria-pressed="false">月</button></div><span id="wellSync" class="well-muted">正在连接数据源…</span></div>
+
+  <div id="wellError" class="v2-notice" hidden></div>
+
+  <div class="well-top-grid">
+
+    <article class="well-card activity-card"><div class="well-card-title"><span>今日活力</span><span class="well-muted" id="wellActivityDate">—</span></div><div class="activity-content"><div class="activity-rings" id="activityRings" aria-label="活动目标进度"></div><div class="activity-numbers" id="activityNumbers"></div></div><div class="activity-footer"><span id="wellDistance">距离 —</span><span>目标进度按已收到的数据展示</span></div></article>
+
+    <article class="well-card device-card"><div class="well-card-title"><span>我的设备</span><span class="connection-pill" id="deviceState">等待上报</span></div><div class="device-main"><svg class="band-illustration" viewBox="0 0 95 150" aria-hidden="true"><rect x="29" y="1" width="37" height="148" rx="18" fill="#28374c"/><rect x="16" y="33" width="63" height="86" rx="30" fill="#0b1019" stroke="#6686b5" stroke-width="2"/><rect x="22" y="39" width="51" height="73" rx="24" fill="#111f32"/><circle cx="47" cy="73" r="15" fill="none" stroke="#7cbeff" stroke-width="4" stroke-dasharray="72 23"/><path d="M47 52v8M47 88v6" stroke="#c4e2ff" stroke-width="2"/><circle cx="47" cy="102" r="2" fill="#5579a9"/></svg><div><h3 id="deviceName">小米手环</h3><p class="well-muted" id="deviceModel">等待设备信息</p><div class="device-battery" id="deviceBattery">电量未上报</div></div></div><div class="device-connection-row"><span>蓝牙连接</span><strong id="deviceBluetooth">状态未上报</strong></div><div class="device-connection-row"><span>数据同步</span><strong id="deviceData">等待数据</strong></div><div class="device-note" id="deviceNote">连接状态由手机端上报，数据到达时间单独显示。</div></article>
+
+  </div>
+
+  <div class="well-metric-grid" id="wellMetrics"></div>
+
+  <article class="well-card trend-card"><div class="well-chart-heading"><div><h3 id="wellChartTitle">心率趋势</h3><p id="wellChartSubtitle" class="well-muted">测量时间按手机原始记录显示</p></div><div class="well-metric-tabs"><button class="selected" data-v2="chart" data-value="hr">心率</button><button data-v2="chart" data-value="stress">压力</button><button data-v2="chart" data-value="spo2">血氧</button><button data-v2="chart" data-value="steps">步数</button></div></div><div id="wellMainChart" class="well-main-chart"></div><div id="wellChartStats" class="well-chart-stats"></div></article>
+
+  <div class="well-bottom-grid"><article class="well-card"><div class="well-card-title"><span>睡眠分布</span><span id="wellSleepTotal" class="well-muted">暂无记录</span></div><div id="wellSleepBar"></div><div class="sleep-legend" id="wellSleepLegend"></div><p class="well-muted small-note">有记录的阶段才会显示；空白不代表没有睡眠。</p></article><article class="well-card"><div class="well-card-title"><span>每日活动</span><span class="well-muted">步数</span></div><div id="wellDailyBars" class="well-daily-bars"></div></article></div>
+
+</div>
+

@@ -1,0 +1,7 @@
+<section class="card life-retry-panel" id="lifeGenerationPanel" aria-label="日程生成">
+  <div class="life-retry-heading"><div class="life-retry-copy"><div class="life-retry-eyebrow">DAY PLANNER</div><h2>日程生成</h2><p>重新安排今天的生活，结果会自动更新。</p></div><button type="button" class="life-retry-button" id="lifeRetryButton" disabled><span class="life-retry-icon" aria-hidden="true">↻</span><span id="lifeRetryLabel">正在读取状态…</span></button></div>
+  <div class="life-generation-status" id="lifeGenerationStatus" data-state="idle"><span class="life-generation-dot" aria-hidden="true"></span><strong id="lifeGenerationState">正在读取</strong><span id="lifeGenerationTime"></span></div>
+  <p class="life-generation-message" id="lifeGenerationMessage" role="status" aria-live="polite">正在连接日程任务。</p>
+  <p class="life-generation-error" id="lifeGenerationError" role="alert" hidden></p>
+  <div class="life-generation-footnote">成功后更新今日日程；生成失败时保留已有安排。</div>
+</section>

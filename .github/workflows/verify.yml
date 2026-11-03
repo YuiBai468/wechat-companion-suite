@@ -1,0 +1,35 @@
+name: Verify source
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Scan tracked files
+        run: python tools/privacy_check.py --staged
+      - name: Check privacy guard
+        run: python -m unittest discover -s tests/privacy -v
+      - name: Check portable backend and HTTP boundaries
+        run: python -m unittest discover -s tests/backend -v
+      - name: Compile Python source
+        run: python -m compileall -q desktop tools tests
+      - name: Build dashboard
+        run: python tools/build-dashboard.py
+      - name: Check generated dashboard is current
+        run: git diff --exit-code -- desktop/console.html
