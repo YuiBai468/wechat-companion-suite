@@ -11,8 +11,9 @@ checker=importlib.util.module_from_spec(spec);spec.loader.exec_module(checker)
 
 class PrivacyCheckTests(unittest.TestCase):
     def setUp(self):
-        parent=ROOT/'.test-tmp';parent.mkdir(exist_ok=True)
-        self.temp=tempfile.TemporaryDirectory(dir=parent);self.addCleanup(self.temp.cleanup)
+        # A source-folder fixture must live outside the checkout. Within a Git
+        # checkout the scanner intentionally reads tracked files only.
+        self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
         self.root=pathlib.Path(self.temp.name)
     def test_secret_in_example_is_still_detected(self):
         (self.root/'.env.example').write_text('API_KEY='+'sk-'+'a'*32,encoding='utf-8')
